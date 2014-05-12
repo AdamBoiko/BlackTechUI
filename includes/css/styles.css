@@ -105,6 +105,10 @@ ul.unstyled {
    Global Styles
    -------------------------------------- */
 
+.im-centered {
+	margin: auto; 
+	max-width: 900px;
+}
 .alert {
 	margin-top: 20px;
 	display: none;
