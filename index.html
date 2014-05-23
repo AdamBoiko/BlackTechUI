@@ -4,7 +4,7 @@
 	<head>
 		
 		<!-- Website Title & Description for Search Engine purposes -->
-		<title>BlakeTech Inc.</title>
+		<title>BlackTech Inc.</title>
 		<meta name="description" content="Learn what it is that makes BlackTech fantastic.">
 		
 		<!-- Mobile viewport optimized -->
@@ -13,6 +13,8 @@
 		<!-- Bootstrap CSS -->
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		<link href="includes/css/styles.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 		
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="includes/css/styles.css">
@@ -23,7 +25,7 @@
 	</head>
 	<body>
 	
-		<div class="container" id="main">
+		<div class="container-fluid" id="main">
 		
 			<div class="navbar navbar-fixed-top navbar-inverse">
 
@@ -82,8 +84,7 @@
 				
 				</div><!-- end container -->
 			</div><!-- end navbar -->
-			
-			
+		
 			<div class="carousel slide" id="myCarousel">
 			
 				<!-- Indicators -->
@@ -96,23 +97,46 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active" id="slide1">
-						<div class="carousel-caption">
-							<h4>BlackTech Welcomes You</h4>
-							<p>Take a look at our Fantastic Sale on Prebuilt Computers!</p>
+						<div class="container carousel-caption">
+							<div class="row">
+								<div class="col-sm-6 left">
+									<h4 class="welcome">Welcome to BlackTech</h4>
+									<p class="sub-heading">Custom Built, Pre-built, Parts - It's all here <span class="glyphicon glyphicon-arrow-down"></span></p>
+									<p class="sub-heading">Buying Computers Made Easy!</p>
+									
+								</div>
+								<div class="col-sm-6">
+									<img src="images/carousel_large_01.png" alt="Computer Tower">
+								</div>
+							</div>
 						</div><!-- end carousel-caption-->
 					</div><!-- end item -->
 					
 					<div class="item" id="slide2">
-						<div class="carousel-caption">
-							<h4>Want to Build your own!</h4>
-							<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span></button>
+						<div class="container carousel-caption">
+							<div class="row">
+								<div class="col-sm-6 left">
+									<h4>Want to Build your own?</h4>
+									<button  onclick="location.href='buildComp.html'" type="submit" class="btn btn-default faqBtn">Build Me!</button>
+								</div>
+								<div class="col-sm-6">
+									<img src="images/computer-guy.png" alt="Computer Guy">
+								</div>
+							</div>
+							
 						</div><!-- end carousel-caption-->
 					</div><!-- end item -->
 					
 					<div class="item" id="slide3">
-						<div class="carousel-caption">
-							<h4>For Commonly asked Questions</h4>
-							<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span></button>
+						<div class="container carousel-caption">
+							<div class="row">
+								<div class="col-sm-12 left">
+									<h4>Feeling a bit lost?</h4>
+									<p class="sub-heading2">Check out a FAQs or give us a call!</p>
+									<button onclick="location.href='FAQ.html'" type="submit" class="btn btn-default faqBtn">FAQs</button>
+								</div>
+							</div>
+							
 						</div><!-- end carousel-caption-->
 					</div><!-- end item -->
 				</div><!-- carousel-inner -->
@@ -123,49 +147,72 @@
 			
 			</div><!-- end myCarousel -->
 			
-			<br><br><br><br>
+			<div class="container-fluid" id="pages">
+				<img id="shadow" src="images/slider-shadow.png" alt="shadow">
+				<div class="container" id="pages-section">
+					<div class="row">
+						<div class="col-sm-4 pages pLeft">
+							<h2>Build Your Own Computer</h2>
+							<p class="hidden-text marginfix">Build you own computer using our user friendly system. Simply select the parts you want from the drop down menu and you're good to go!</p>
+							<button onclick="location.href='buildComp.html'" type="submit" class="btn btn-default scroll-btns bleft">Build</button>
+						</div>
+						<div class="col-sm-4 pages pMiddle">
+							<h2>Check Out Our Pre-Built Computers</h2>
+							<p class="hidden-text">Check out some of our ready made computers. We ship all our pre-built computers with Windows 8 and run extensive stability tests on ever machine. All you have to do is plug it in!</p>
+							<button onclick="location.href='customComp.html'" type="submit" class="btn btn-default scroll-btns">Pre-Built Computers</button>
+						</div>
+						<div class="col-sm-4 pages pRight">
+							<h2>Need to Contact Us?</h2>
+							<p class="hidden-text marginfix">Need some assistance or want to know something about us? Head on over to our contact page...We're happy to help!</p>
+							<button type="submit"  onclick="location.href='contactUs.html'" class="btn btn-default scroll-btns bright">Contact</button>
+						</div>
+					</div>
+				</div>
+			</div>
 			
-			<div class="row" id="moreCourses">
-				<div class="col-12">
-					<h3>Learn more ..</h3>
-					<div class="thumbnails row">
-						<div class="col-6">
-							<div class="thumbnail">
-								<img src="images/item_psd2html5.jpg" alt="Want a Website Developed!">
-		
-								
-								<div class="caption">
-									<br>
-									<h2>At BlackTech!</h2>
+			
+			
+			<div class="container">
+				<div class="row" id="moreCourses">
+					<div class="col-12">
+						<h3>Learn more ..</h3>
+						<div class="thumbnails row">
+							<div class="col-6">
+								<div class="thumbnail">
+									<img src="images/itempsd2html5.jpg" alt="Want a Website Developed!">
+			
 									
-									<h3>We Specialise in delivering quality service to our customers, see more...</h3>
-									
-									<p><a href="" class="btn btn-primary btn-small" target="_blank">Email BlackTech</a> 
-									   <a href="" target="_blank" class="btn btn-small btn-link">Learn more</a></p>
-								</div><!-- end caption -->
-							</div><!-- end thumbnail -->
-						</div><!-- end col-6 -->
+									<div class="caption">
 						
-						<div class="col-6">
-							<div class="thumbnail">
-								<img src="images/item_webhosting101.jpg" alt="I Have Experience in">
-								
-								
-								<div class="caption">
-									<h2>See our specials for the Day</h2>
-									
-									<h3>Gaming Computers, Top-end Computers 20% off with Online Purchase.</h3>
-									
-									<p><a href="" class="btn btn-primary btn-small" target="_blank">Email Adam</a> 
-										<a href="" target="_blank" class="btn btn-small btn-link">Learn more</a></p>
-					
-
-								</div><!-- end caption -->
-							</div><!-- end thumbnail -->
-						</div><!-- end col-6 -->
-					</div><!-- end row -->
-				</div><!-- end col-12 -->
-			</div><!-- end moreCourses -->
+										<h2>At BlackTech!</h2>
+										
+										<h3>We Specialise in delivering quality service to our customers, see more...</h3>
+										
+										<p><a href="" class="btn btn-default btn-small" target="_blank">Email BlackTech</a> 
+										   <a href="" target="_blank" class="btn btn-small btn-link">Learn more</a></p>
+									</div><!-- end caption -->
+								</div><!-- end thumbnail -->
+							</div><!-- end col-6 -->
+							
+							<div class="col-6">
+								<div class="thumbnail">
+									<img src="images/item_webhosting101.jpg" alt="I Have Experience in">
+									<div class="caption">
+										<h2>See our specials for the Day</h2>
+										
+										<h3>Gaming Computers, Top-end Computers 20% off with Online Purchase.</h3>
+										
+										<p><a href="" class="btn btn-default btn-small" target="_blank">Email BlackTech</a> 
+											<a href="" target="_blank" class="btn btn-small btn-link">Learn more</a></p>
+						
+	
+									</div><!-- end caption -->
+								</div><!-- end thumbnail -->
+							</div><!-- end col-6 -->
+						</div><!-- end row -->
+					</div><!-- end col-12 -->
+				</div><!-- end moreCourses -->
+			</div>
 		</div><!-- end container -->
 		
 		<footer>
@@ -187,6 +234,7 @@
 							<li><a href="index.html">Home</a></li>
 							<li><a href="customComp.html">Custom Computers</a></li>
 							<li><a href="buildComp.html">Build Computer</a></li>
+							<li><a href="contactUs.html">Contact</a></li>
 							<li><a href="FAQ.html">FAQ</a></li>
 						</ul>
 					</div><!-- end col-sm-2 -->
@@ -202,7 +250,7 @@
 					</div><!-- end col-sm-2 -->
 					
 					<div class="col-sm-2">
-						<h6>Coded with <span class="glyphicon glyphicon-heart"></span> by (TeamName)</h6>
+						<h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Group 69</h6>
 					</div><!-- end col-sm-2 -->
 				</div><!-- end row -->
 			</div><!-- end container -->
