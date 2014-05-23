@@ -1,5 +1,6 @@
 /*
 
+673333	4D3030	431111	B36F6F	B38181
 My Custom CSS
 =============
 
@@ -12,6 +13,10 @@ Updated: April 29 2014
 /* --------------------------------------
    Layout
    -------------------------------------- */
+
+* {
+	font-family: 'Lato', sans-serif;
+}
 
 #features {
 	text-align: center;
@@ -26,7 +31,7 @@ Updated: April 29 2014
 }
 
 footer {
-	background: #333;
+	background-color: rgba(21, 3, 13, 0.9);
 	color: #F8F8F8;
 	font-size: 11px;
 	padding: 20px;
@@ -56,6 +61,11 @@ ul.unstyled {
 	padding: 0;
 }
 
+.styled {
+	list-style: circle;
+	text-align: left;
+	line-height: 20px;
+}
 
 /* --------------------------------------
    Navbar
@@ -68,42 +78,86 @@ ul.unstyled {
 .navbar-brand {
 	padding: 13px 15px;
 }
-   
+
+.navbar {
+	background-color: rgba(21, 3, 13, 0.9);
+	margin-bottom: 0;
+}
+
+.navbar-inverse .navbar-nav>.active>a,  .navbar-inverse .navbar-nav>.active>a:hover{
+	background-color: rgba(144, 71, 71, 0.5);
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+	background-color: #563636;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #d6d6d6;
+}
    
 /* --------------------------------------
    Carousel
    -------------------------------------- */
 
-#myCarousel {
-	margin-top: 60px;
+.carousel-inner {
+	background: #B36F6F;
+	background: url('../../images/background.jpg') fixed;
 }
 
 .carousel-caption {
-	font-size: 24px;
+	top:10%;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	line-height: 10px;
+	font-weight: 200;
+}
+
+.col-centered {
+	display: table;
+	width: 50%;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: 20px;
+	text-align:left;
+	border: 1px solid #c79494;
+	border-radius: 5px;
+}
+
+.left {
+	padding-top: 100px;
 }
 
 .carousel-caption h4 {
 	font-size: 32px;
+	font-weight: 700;
 }
 
-#myCarousel .item { height: 400px; }
 
-#slide1 {
-	background: url('../../images/carousel_medium_01.jpg') top center no-repeat;
+.welcome, .sub-heading {
+	text-align: left;
 }
 
-#slide2 {
-	background: url('../../images/carousel_medium_02.jpg') top center no-repeat;
-}
 
-#slide3 {
-	background: url('../../images/carousel_medium_03.jpg') top center no-repeat;
+
+#myCarousel .item {
+	height: 400px;
+	
+}
+.faqBtn {
+	margin-top: 5px;
 }
 
 
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
+
+h3 {
+	font-family: 'Lato', sans-serif;
+}
 
 .im-centered {
 	margin: auto; 
@@ -112,6 +166,128 @@ ul.unstyled {
 .alert {
 	margin-top: 20px;
 	display: none;
+}
+
+.btn-default {
+	background-color: #B36F6F;
+	border-color: #B36F6F;
+}
+
+.btn-link {
+	color: #B36F6F;
+}
+
+.scroll-btns {
+	background-color: #c79696;
+	border-color: #c79696;
+	margin-bottom: 10px;
+}
+
+#hidden-div {
+	display: none;
+}
+
+.form-space {
+	margin-top: 40px;
+}
+
+.bright {
+	margin-top: 40px;
+}
+
+.bleft {
+	margin-top: 20px;
+}
+
+#email, #name {
+	width: 30%;
+}
+
+#inputMessage{
+	width: 60%;
+}
+
+.selection-fields {
+	margin-top: 15px;
+}
+
+.bottom-field {
+	margin-bottom: 10px;
+}
+a {
+	color: #B36F6F;
+}
+
+a:hover {
+	color: #cda0a0;
+	text-decoration: none;
+}
+#shadow {
+	position: absolute;
+	display: block;
+	left: 20%;
+}
+
+.hidden-text {
+	margin-top: 50px;
+}
+
+.marginfix {
+	margin-top: 85px;
+}
+
+.pages {
+	overflow: hidden;
+}
+
+#pages {
+	position: relative;
+	background-color: #cc9f9f;
+	height: 120px;
+	transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	overflow: hidden;
+}
+
+#pages:hover {
+	background-color: #B36F6F;
+	min-height: 279px;
+	overflow: visible;
+	color: #eeeeee;
+	
+}
+
+#pages:hover .pMiddle, #pages:hover .pLeft {
+	border-right: 1px solid #864646;
+}
+
+
+#pages h2 {
+	color: #3c3c3c;
+	text-shadow: 1px 1px #c3c3c3;
+}
+
+#pages-section {
+	font-weight: 600;
+	text-align: center;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;	
+}
+
+.pMiddle {
+	border-left: 1px solid #c28b8b;
+	border-right: 1px solid #d2aaaa;
+	
+}
+
+.pLeft {
+	border-right: 1px solid #d2aaaa;
+}
+
+.pRight {
+	border-left: 1px solid #c28b8b;
 }
 
 .well {
@@ -128,6 +304,7 @@ ul.unstyled {
 
 .thumbnail {
 	position: relative;
+	border: 1px solid #c79494;
 }
 
 .thumbnail h3 {
@@ -154,6 +331,8 @@ ul.unstyled {
 }
 
 
+
+
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
@@ -171,51 +350,22 @@ ul.unstyled {
 	
 }
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+/* Portrait & landscape phone */
+@media (max-width: 1199px) {
 	
-	#myCarousel .item { height: 310px; }
-	
-	#slide1 {
-		background: url('../../images/carousel_small_01.jpg') top center no-repeat;
+	.marginfix {
+	margin-top: 50px;
 	}
 	
-	#slide2 {
-		background: url('../../images/carousel_small_02.jpg') top center no-repeat;
+	.bright {
+	margin-top: 20px;
 	}
 	
-	#slide3 {
-		background: url('../../images/carousel_small_03.jpg') top center no-repeat;
+	.bleft {
+	margin-top: 0px;
 	}
-	
-	.carousel-caption {
-		font-size: 16px;
-	}
-	
-	.carousel-caption h4 {
-		font-size: 22px;
-	}
-	
 }
 
-/* Large desktop */
-@media (min-width: 1200px) {
-
-	#myCarousel .item { height: 500px; }
-	
-	#slide1 {
-		background: url('../../images/carousel_large_01.jpg') top center no-repeat;
-	}
-	
-	#slide2 {
-		background: url('../../images/carousel_large_02.jpg') top center no-repeat;
-	}
-	
-	#slide3 {
-		background: url('../../images/carousel_large_03.jpg') top center no-repeat;
-	}
-
-}
 
 
 

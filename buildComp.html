@@ -20,6 +20,13 @@
 		<!-- Include Modernizr in the head, before any other Javascript -->
 		<script src="includes/js/modernizr-2.6.2.min.js"></script>
 		
+		<script language="JavaScript">
+			function setVisibility(id, visibility)
+			{
+				document.getElementById(id).style.display = visibility;
+			}
+		</script>
+		
 	</head>
 	<body>
 	
@@ -85,58 +92,70 @@
 			</div><!-- end navbar -->
 			
 			<br> <br> <br> <br>
-		<div class ="im-centered">
 		<div class="container">
 			<div class="row" id="moreCourses">
-				<div class="col-12 col-centered">
+				<div class="col-sm-12">
+					<div class="col-centered">
 					<h3>Build your Custom Computer Now</h3>
-					<div class="thumbnails row">
-						<div class="col-6">
-							<div class="thumbnail">
-								<img src="images/item_psd2html5.jpg" alt="Want a Website Developed!">
-		
+							
+							<img src="images/itempsd2html5.jpg" alt="Want a Website Developed!">
+						
+							<div class="caption">
+								<br>
+								<h3>Pick your Hardware from the list below! Then click Build Now for complete price
+									list.</h3>
+
+								<div class="selection-fields">
+								    <label>Processor:</label><br>
+								    <select id="ProcessorName" name="ProcessorSelect">
+									<option>intel i5 4670k</option>
+									<option>intel i7 4770k</option>
+									<option>intel i5 4670</option>
+									</select>
+								    </div>
 								
-								<div class="caption">
-									<br>
-									<h3>Pick your Hardware from the list below! Then click Build Now for complete price
-										list.</h3>
-									
-									<div class="unselected-field" style="display: inline-block;" id="ProcessorName">
-									    <label>Processor: <select id="ProcessorName" name="ProcessorSelect">
-									        <option>intel i7 4770k</option>
-									       			 	</select>
-									    </label>
-
-									    <label>Graphic Card: <select id="ProcessorName" name="ProcessorSelect">
-									        <option>Gigabyte GeForce GTX Titan Black</option>
-									       			 	</select>
-									    </label>
-
-									    <label>Memory: <select id="ProcessorName" name="ProcessorSelect">
-									        <option>16GB (4 X 4GB) Quad Channel DDR3 at 1600MHz</option>
-									       			 	</select>
-									    </label>
-
-									    <label>Hard Drive: <select id="ProcessorName" name="ProcessorSelect">
-									        <option>256GB SSD 6Gb/s MAIN</option>
-									       			 	</select>
-									    </label>
-
-									    <label>Optical Drive: <select id="ProcessorName" name="ProcessorSelect">
-									        <option>Single Drive: Dual Layer Blu-ray Reader (BD-ROM)</option>
-									       			 	</select>
-									    </label>
-									</div>​
-									
-									<a href="" class="btn btn-primary btn-large btn-center">Build Now</a> 
-								</div><!-- end caption -->
-							</div><!-- end thumbnail -->
-						</div><!-- end col-6 -->
-					</div><!-- end row -->
-				</div><!-- end col-12 -->
-			</div><!-- end moreCourses -->
-		</div><!-- end container -->
-		</div><!--end im-centered -->
+								    <div class="selection-fields">
+								    <label>Graphic Card:</label><br>
+								    <select id="ProcessorName" name="ProcessorSelect">
+									<option>Gigabyte GeForce GTX 770 Direct CU</option>
+									<option>Gigabyte GeForce GTX Titan Black</option>
+									</select>
+								    </div>
+								    
+								    <div class="selection-fields">
+								    <label>Memory:</label><br>
+								    <select id="ProcessorName" name="ProcessorSelect">
+									<option>16GB (4 X 4GB) Quad Channel DDR3 at 1600MHz</option>
+									<option>18GB (2 X 4GB) Quad Channel DDR3 at 1600MHz</option>
+									</select>
+								    </div>
+								    
+								    <div class="selection-fields">
+								    <label>Hard Drive:</label><br>
+								    <select id="ProcessorName" name="ProcessorSelect">
+									<option>256GB SSD 6Gb/s MAIN</option>
+									<option>125GB SSD 6Gb/s MAIN</option>
+									</select>
+								    </div>
+								    
+								    <div class="selection-fields bottom-field">
+								    <label>Optical Drive:</label><br>
+								    <select id="ProcessorName" name="ProcessorSelect">
+									<option>Single Drive: Dual Layer Blu-ray Reader (BD-ROM)</option>
+									</select>
+								    </div>
+	
+								<a href='#' class="btn btn-default btn-center priceBtn" onclick="setVisibility('hidden-div', 'inline');";>Check Price</a>
+								<div id="hidden-div">
+									<a href='#' class="btn btn-warning btn-center">$1600</a>
+									<a href='#' class="btn btn-danger btn-center">Buy Now</a>
+								</div>
+			
+							</div><!-- end col-6 -->
+					</div><!-- end col-12 -->
+				</div><!-- end moreCourses -->
+			</div><!-- end container -->
+		</div>
 		
 		<footer>
 			<div class="container">
@@ -157,6 +176,7 @@
 							<li><a href="index.html">Home</a></li>
 							<li><a href="customComp.html">Custom Computers</a></li>
 							<li><a href="buildComp.html">Build Computer</a></li>
+							<li><a href="contactUs.html">Contact</a></li>
 							<li><a href="FAQ.html">FAQ</a></li>
 						</ul>
 					</div><!-- end col-sm-2 -->
@@ -172,7 +192,7 @@
 					</div><!-- end col-sm-2 -->
 					
 					<div class="col-sm-2">
-						<h6>Coded with <span class="glyphicon glyphicon-heart"></span> by (TeamName)</h6>
+						<h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Group 69</h6>
 					</div><!-- end col-sm-2 -->
 				</div><!-- end row -->
 			</div><!-- end container -->
